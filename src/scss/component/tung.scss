@@ -27,23 +27,31 @@ body{
     transition: 0.3s;
 }
 .anh {
-    //background-image:  url(src/img/329711.2e21e54c385b266b767a64795617c9f2.1600.jpg) ;
-    margin: 20%;
-    
+    border: black solid 1px;
+
+    position: absolute;
     height: 24rem;
-    
-    background: #f50057;
+    justify-content: center;
+    align-items: center;
+  
+   
     animation: anh 1s ;
   }
   
   @keyframes anh {
-    0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1.5, 1.5);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
+   
+      0%{
+        opacity:0;
+        transform:scale(1.25);
+      }
+      to{
+        opacity:1;
+        transform:scale(1);
+      }
+    
   }
+  .card-carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
